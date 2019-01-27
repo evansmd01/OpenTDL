@@ -10,10 +10,12 @@ def test():
         if test == "runner.py":
             continue
         print('Running test: ' + test)
-        with open(cwd + "/" + test + "/program.tdl") as f:
+        programFile = cwd + "/" + test + "/program.tdl"
+        with open(programFile) as f:
             tdl = f.read()
             print("Testing program:")
             print(tdl)
+            os.system("python " + cwd + "/../compiler/tdlc.py " + programFile)
             with open(cwd + "/" + test + "/expectation.json") as j:
                 print("evaluating against expectation:")
                 expectation = json.loads(j.read())
