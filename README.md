@@ -10,21 +10,64 @@ So lets tackle the complexity of finding a universal structure for defining all 
 ## Syntax
 
 ```
-program My Custom Program
-  session My Day 1 Morning Session
-    1 sets Foam Roller
-      10 minutes
-    rest 2 minutes
-    3 rounds My Circuit
-      1 sets Push Up
-        8 reps
-      rest 30 seconds
-      1 sets Pull Up
-        4 reps
-      rest 5 minutes
-  rest 8 hours
-  session My Day 1 Evening Session
-  rest 1 days
+
+exercise Open crimp
+  notes: keep shoulders engaged
+  videoUrl: http://youtube.com/some-instructional-video
+
+exercise Sloper
+
+rotation Dead Hangs
+  Open crimp
+  Sloper
+  exercise Pinch
+
+exercise Push Up
+exercise Ring Dips
+
+rotation Push
+  Push Up
+  Ring Dips
+
+exercise Pull Up
+exercise Db Rows
+
+rotation Pull
+  Pull Up
+  Db Rows
+
+program My program
+  2 cycles
+    session Strength Training
+      3 rounds
+        1 sets rotating Push each cycle
+          8 reps
+            increasing 1 each cycle
+            decreasing 3 every 4 cycles
+        rest 30 seconds
+        1 sets rotating Pull each cycle
+          4 reps
+            increasing 1 each cycle
+            decreasing 3 every 4 cycles
+        rest 60 seconds
+      3 sets Planks
+        perform 30 seconds
+        rest 1 minutes
+    session Climbing
+    session Hangboarding
+      1 sets Shoulder Circles
+        perform 1 minutes
+        rest 1 minutes
+      3 rounds
+        3 sets rotating Dead Hangs each set
+          6 reps
+            perform 6 seconds
+              increasing 1 each cycle
+            rest 3 seconds
+              increasing 1 each round
+          rest 2 minutes
+        rest 5 minutes
+    session Biking
 ```
 
 

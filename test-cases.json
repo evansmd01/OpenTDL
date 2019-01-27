@@ -61,7 +61,7 @@ program A very simple program
   },
   {
     "test": "
-program Hangboarding
+program Hangboarding with infinite cycles
   * cycles
     session The hang sess.
       6 rounds
@@ -76,98 +76,14 @@ program Hangboarding
             rest 5 seconds
         rest 5 minutes
     rest 1 day
-    ",
-    "expectation": {
-      "errors": [],
-      "program": {
-        "name": "Hangboarding",
-        "prescriptions": [
-          {
-            "type": "cycle",
-            "quantity": "*",
-            "prescriptions": [
-              {
-                "type": "session",
-                "name": "The hang sess.",
-                "prescriptions": [
-                  {
-                    "type": "rounds",
-                    "quantity": 6,
-                    "prescriptions": [
-                      {
-                        "type": "sets",
-                        "name": "Easy Hold",
-                        "quantity": 1,
-                        "prescriptions": [
-                          {
-                            "type": "reps",
-                            "quantity": 6,
-                            "prescriptions": [
-                              {
-                                "type": "perform",
-                                "quantity": 7,
-                                "unit": "seconds"
-                              },
-                              {
-                                "type": "rest",
-                                "quantity": 3,
-                                "unit": "seconds"
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "type": "rest",
-                        "quantity": 2,
-                        "unit": "minutes"
-                      },
-                      {
-                        "type": "sets",
-                        "name": "Hard Hold",
-                        "quantity": 1,
-                        "prescriptions": [
-                          {
-                            "type": "reps",
-                            "quantity": 6,
-                            "prescriptions": [
-                              {
-                                "type": "perform",
-                                "quantity": 5,
-                                "unit": "seconds"
-                              },
-                              {
-                                "type": "rest",
-                                "quantity": 5,
-                                "unit": "seconds"
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "type": "rest",
-                        "quantity": 5,
-                        "unit": "minutes"
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "type": "rest",
-                "quantity": 1,
-                "unit": "days"
-              }
-            ]
-          },
-          {
-            "type": "rest",
-            "quantity": 1,
-            "unit": "days"
-          }
-        ]
-      }
-    }
+    "
+  },
+  {
+    "test": "
+program Example of rotations
+ * cycles
+  def rotation Primary
+    
+    "
   }
 ]
