@@ -31,4 +31,4 @@ program My Custom Program
 **Work in Progress, check back soon**
 
 Check out the following parsers:
-- https://github.com/evansmd01/OpenTDL-Parser-Kotlin
+- https://github.com/evansmd01/OpenTDL-Javascript-Parser
